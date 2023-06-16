@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Booking</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/ConfirmBooking.css">
+</head>
+<body>
+    <h1>Booking Confirmation</h1>
+    <h5>Please verify the details below</h5>
+    <div id="booking-preview">
+        <h2>Booking Details:</h2>
+        <p>Location: <span id="location"></span></p>
+        <p>Check In:: <span id="from-date"></span></p>
+        <p>Check Out:: <span id="to-date"></span></p>
+        <p>Number of Adults: <span id="num-adult"></span></p>
+        <p>Number of Children: <span id="num-child"></span></p>
+        <p>Number of Rooms: <span id="num-rooms"></span></p>
+    </div>
+
+    <div id="primary-contact">
+        <h2>Primary Contact:</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob">
+        <label for="age">Age:</label>
+        <input type="text" id="age" disabled>
+        <label for="id-type">ID Type:</label>
+        <select id="id-type">
+            <option value="Aadhar">Aadhar</option>
+            <option value="Passport">Passport</option>
+            <option value="Driver-license">Driver's License</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="id-number">ID Number:</label>
+        <input type="text" id="id-number">
+    </div>
+
+    <div class="button-container">
+        <button id="cancel-booking-btn">Cancel Booking</button>
+        <button id="confirm-booking-btn">Confirm Booking</button>
+    </div>
+
+    <script src="../JS/ConfirmBooking.js"></script>
+</body>
+</html>

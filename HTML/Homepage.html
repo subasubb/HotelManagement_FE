@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AADHYA Residency - Rooms Booking</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/HomePage.css">
+</head>
+
+<body>
+    <header>
+        <h1>AADHYA Residency</h1>
+    </header>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#" class="tab-link" data-tab="home" onclick="handleHomeTab()">Home</a></li>
+            <li><a href="#" class="tab-link" data-tab="booking" onclick="handleBookingTab()">Reservation</a></li>
+            <li><a href="#" class="tab-link" data-tab="contact" onclick="handleContactTab()">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="content">
+            <div id="home" class="tab-content">
+                <section id="home">
+                    <h2>Check-in</h2>
+                    <ul>
+                        <li>Contactless social distancing and check-out</li>
+                        <li>Cashless transactions are available for all charges at the property</li>
+                        <li>Protective shields in place at main contact areas</li>
+                        <li>Guest rooms kept vacant for 48 hours between stays</li>
+                        <li>Social distancing measures in place</li>
+                        <li>Contactless room service is available</li>
+                    </ul>
+
+                    <h2>Safety Measures</h2>
+                    <ul>
+                        <li>Personal protective equipment worn by staff</li>
+                        <li>Temperature checks given to staff</li>
+                        <li>Temperature checks available for guests</li>
+                        <li>Masks available</li>
+                        <li>Masks are required at the property</li>
+                        <li>Hand sanitizer provided</li>
+                        <li>Enhanced food service safety measures are in place</li>
+                        <li>Individually wrapped food options available for breakfast and dinner</li>
+                        <li>Reservations are required for the use of certain on-site facilities</li>
+                    </ul>
+
+                    <h2>Property Amenities</h2>
+                    <ul>
+                        <li>Internet</li>
+                        <li>Available in all rooms: Free WiFi</li>
+                        <li>Available in some public areas: Free WiFi</li>
+                    </ul>
+
+                    <h2>Parking and Public Transport</h2>
+                    <ul>
+                        <li>Free self-parking on site</li>
+                        <li>Electric car charging station on site</li>
+                        <li>Wheelchair-accessible parking available</li>
+                    </ul>
+
+                </section>
+            </div>
+            <div id="booking" class="tab-content">
+                <div class="search-form">
+                    <label for="from-date">Check In</label>
+                    <input type="date" id="from-date">
+
+                    <label for="to-date">Check Out</label>
+                    <input type="date" id="to-date">
+                    
+                    <label for="location">Location:</label>
+                    <select id="location">
+                        <option value="Chennai">Chennai</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Trichy">Trichy</option>
+                        <option value="Karur">Karur</option>
+                        <option value="Salem">Salem</option>
+                    </select>
+                    
+                    <button id="search-button"onclick="getRoomDetails()">Search</button>
+                </div>
+                <p id="error-message" class="error-message"></p>
+                <div id="error-container"></div>
+                <div id="card-container"></div>
+            </div>
+            <div id="contact" class="tab-content">
+                <div class="contact-info">
+                    <h3>Head Office</h3>
+                    <p>
+                        Address: 123 Main Street, City, State, Country<br>
+                        Phone: +1 123-456-7890<br>
+                        Email: info@example.com
+                    </p>
+                </div>
+
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 AADHYA Residency. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/HomePage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+/* Add your custom styles here */
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2px 0;
+    z-index: 2;
+}
+
+h1 {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+main {
+    padding: 15px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add styles for the description section */
+#home {
+    padding: 20px;
+}
+
+#home h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#home ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add styles for the scrollable container */
+.scroll-container {
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    #home {
+        padding: 5px;
+    }
+
+    .scroll-container {
+        max-height: 300px;
+    }
+}
+
+/* Add styles for the active tab link */
+.tab-link.active {
+    font-weight: bold;
+}
+
+/* Add styles for the content of different tabs */
+/*.tab-content {
+    display: none;
+    padding: 20px;
+  }*/
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .tab-content {
+        padding: 10px;
+    }
+}
+
+.tab-content {
+    display: none;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    width: 300px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.card {
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: calc(33.33% - 10px);
+    /* Adjust the width as needed */
+    margin-bottom: 20px;
+    /* Add other styles for the card */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    /*background-image: url('../bgImage/hotel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="date"],
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 80px;
+    text-align: center;
+}
+
+body{
+background: #fff;
+font-family: "Roboto", arial, sans-serif;
+font-weight: 200;
+font-size: 16px;
+line-height: 1.8;
+color: #6c757d;
+position: relative;
+}
+
+::-moz-selection {
+color: #fff;
+background: #ffba5a;
+}
+
+::selection {
+color: #fff;
+background: #ffba5a;
+}
+
+a {
+-webkit-transition: .3s all ease;
+-o-transition: .3s all ease;
+transition: .3s all ease;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+color: #000;
+font-family: "Playfair Display", times, serif;
+}
+
+.font-family-serif {
+font-family: "Playfair Display", times, serif;
+}
+
+.font-family-sans-serif {
+font-family: "Roboto", arial, sans-serif;
+}
+
+.bg-light {
+background: #f2f4fb !important;
+}
+
+.custom-caption {
+    font-size: 14px;
+    letter-spacing: .2em;
+}

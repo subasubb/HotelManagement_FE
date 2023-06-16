@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Admin.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="#" id="addRoomsLink" class="active">Add Rooms</a>
+        <a href="#" id="getRoomsLink">Get Rooms</a>
+        <a href="#" id="bookingDetailsLink">Booking Details</a>
+    </div>
+
+    <div class="main">
+        <div id="addRoomId">
+            <h1>Add Rooms</h1>
+            <form id="addRoomsForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required><br><br>
+
+                <label for="availableRooms">Available Rooms:</label>
+                <input type="number" id="availableRooms" name="availableRooms" required><br><br>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required><br><br>
+
+                <input type="submit" value="Add">
+            </form>
+        </div>
+
+
+        <div id="getRoomDetailId">
+            <h1>Rooms Details</h1>
+            <table id="roomTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Available Rooms</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="roomTableBody"></tbody>
+            </table>
+        </div>
+
+        <div id="getBookingDetailId">
+            <h1>Booking Details</h1>
+            <div>
+                <label for="searchBookingId">Search by Booking ID:</label>
+                <input type="text" id="searchBookingId" />
+                <button onclick="searchBooking()">Search</button>
+            </div>
+
+            <table id="bookingTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Phone Number</th>
+                        <th>Location</th>
+                        <th>Rooms Booked</th>
+                        <th>Total Amount</th>
+                        <th>From Date</th>
+                        <th>To Date</th>
+                        <th>Number of Adults</th>
+                        <th>Number of Children</th>
+                    </tr>
+                </thead>
+                <tbody id="bookingTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../JS/Admin.js"></script>
+</body>
+
+</html>

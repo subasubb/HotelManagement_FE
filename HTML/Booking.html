@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Booking.css">
+</head>
+
+<body>
+    <h1>Booking Details</h1>
+    <button id="back-button">&#8592; Back</button>
+    <div class="split-screen">
+        <div class="left-section">
+
+            <div id="bookingDetails">
+                <div id="card-container">
+                    <div class="card">
+                        <div class="card-column">
+                            <p id="location">Location: </p>
+                            <p id="available-rooms">Available Rooms: </p>
+                            <p id="price">Price: ₹ /day </p>
+                        </div>
+                    </div>
+                </div>
+                <label for="from-date">Check In:</label>
+                <input type="date" id="from-date">
+                <label for="to-date">Check Out:</label>
+                <input type="date" id="to-date">
+                <label for="num-adult">No. of Adults:</label>
+                <input type="number" id="num-adult">
+                <label for="num-child">No. of Child:</label>
+                <input type="number" id="num-child">
+                <label for="num-rooms">No. of Rooms:</label>
+                <input type="number" id="num-rooms" onblur="validatingRoom()">
+                <p id="error-message" class="error-message"></p>
+
+                <p>* Breakfast will be complimentary.</p>
+
+                <div id="calculate-button-container">
+                    <button id="calculate-btn" onclick="calculateTotalRoomRent()">Calculate</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div id="price-calculation">
+                <table>
+                    <tr>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Room rent</td>
+                        <td id="room-rent"></td>
+                    </tr>
+
+                    <tr>
+                        <td>GST (18%)</td>
+                        <td id="gst"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Room Rent</td>
+                        <td id="tb-total-room-rent"></td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td id="tb-discount"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td id="tb-total"></td>
+                    </tr>
+                </table>
+                <button id="confirm-booking-btn">Next →</button>
+            </div>
+            <p id="info-message"></p>
+        </div>
+    </div>
+    <script src="../JS/Booking.js"></script>
+</body>
+
+</html>
